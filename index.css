@@ -1,0 +1,139 @@
+:root {
+    --primary-dark-cyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+    --neutral-dark-blue: hsl(212, 21%, 14%);
+    --neutral-gray-blue: hsl(228, 12%, 48%);
+    --neutral-white:  hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: Fraunces, "Times New Roman", Times, serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+.design {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-cream);
+}
+
+.card {
+    background-color: var(--neutral-white);
+    border-radius: 8px;
+    margin: 1rem;
+    max-width: 800px;
+}
+
+.card-img {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: cover;
+    background-position: 50%;
+    min-height: 30vh;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body  {
+    padding: 1.25rem;
+}
+
+.text-dark-blue {
+    color: var(--neutral-dark-blue);
+}
+
+.text-gray-blue {
+    color: var(--neutral-gray-blue);
+}
+
+.text-upper {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.para-ht {
+    line-height: 1.5;
+}
+
+.h1-ht {
+    line-height: 1;
+}
+
+.buy {
+    margin: 0.5rem;
+}
+
+.text-dark-cyan {
+    color: var(--primary-dark-cyan);
+    font-family: Fraunces, "Times New Roman", Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.old-price {
+    margin-left: 20px;
+    position: relative;
+    top: -5px;
+}
+
+.bg-dark-cyan {
+    background-color: var(--primary-dark-cyan);
+    color: var(--neutral-white);
+    border-radius: 8px;
+    text-align: center;
+    width: 95%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: none;
+    font-family:  Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+button > img {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+button:hover {
+    background-color: hsl(160, 61%, 16%);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+        display: flex;
+    }
+
+    .card-img, .card-body {
+        flex: 1 1 50%;
+    }
+
+    .card-img {
+        background-image: url("./images/image-product-desktop.jpg");
+        border-radius: 8px 0 0 8px;
+    }
+}
+
